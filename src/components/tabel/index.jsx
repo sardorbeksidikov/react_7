@@ -64,13 +64,6 @@ function Tabel() {
     setData(search);
   };
 
-  //   all///////////////////////////
-
-  const all = () => {
-    let user = JSON.parse(localStorage.getItem("user")) || [];
-    setData(user);
-  };
-
   // Like function///////////////////
   const like = (id) => {
     let person = JSON.parse(localStorage.getItem("user")) || [];
