@@ -1,0 +1,158 @@
+.tabel {
+  margin-top: 50px;
+  border: 1px solid rgb(208, 209, 210);
+  padding: 20px;
+  border-radius: 8px;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(208, 209, 210);
+  margin-top: 20px;
+
+  p {
+    width: 20%;
+  }
+  p:nth-child(1) {
+    width: 5%;
+    padding-left: 10px;
+  }
+}
+.like {
+  svg {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+  }
+}
+.tr1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 50px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(208, 209, 210);
+  margin-top: 20px;
+
+  p {
+    width: 20%;
+  }
+  p:nth-child(1) {
+    width: 5%;
+    padding-left: 10px;
+  }
+}
+.edit {
+  background-color: rgb(29, 252, 13);
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+  width: 60px;
+  height: 40px;
+  transition: 0.3s;
+  svg {
+    fill: white;
+  }
+}
+
+.delete {
+  background-color: #e84848;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  margin-left: 20px;
+  outline: none;
+  width: 60px;
+  height: 40px;
+  transition: 0.3s;
+  svg {
+    fill: white;
+  }
+}
+
+.edit:hover {
+  background-color: rgb(47, 235, 18);
+}
+.delete:hover {
+  background-color: rgb(186, 45, 59);
+}
+
+@media screen and (max-width: 780px) {
+  .tr1 {
+    height: 100px;
+    p:nth-child(1) {
+      width: auto;
+    }
+    p:last-child {
+      display: grid;
+      align-items: center;
+      width: 10%;
+    }
+    .delete {
+      margin: 0;
+      margin-top: 10px;
+      height: 35px;
+      width: 40px;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    .edit {
+      height: 35px;
+      width: 40px;
+      svg {
+        width: 12px;
+        height: 12px;
+      }
+    }
+  }
+}
+
+
+
+.filter {
+  width: 100%;
+  padding-top: 30px;
+  display: flex;
+  &__input {
+   border-radius: 5px;
+    padding: 12px 55px;
+    background: url("../../assets/search\ \(2\).svg") no-repeat;
+    background-position: 20px 10px;
+  }
+  &-item {
+    &__select {
+      padding: 11px 25px ;
+      border-radius: 5px;
+      border: 2px solid black;
+      margin-left: 40px;
+    }
+    
+  }
+}
+
+.btn {
+  width: 40%;
+  display: flex;
+  justify-content: left;
+  button {
+    width: 25%;
+    height: 50px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    font-size: 17px;
+    background-color: white;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
