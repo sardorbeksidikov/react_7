@@ -10,7 +10,7 @@
   padding-bottom: 50px;
   margin-bottom: 100px;
 }
-.tr {
+.map {
   width: 100%;
   display: flex;
   align-items: center;
@@ -19,22 +19,15 @@
   border-bottom: 1px solid rgb(208, 209, 210);
   margin-top: 20px;
 
-  p {
+  h4 {
     width: 20%;
   }
-  p:nth-child(1) {
+  h4:nth-child(1) {
     width: 5%;
     padding-left: 10px;
   }
 }
-.like {
-  svg {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-  }
-}
-.tr1 {
+.map-one {
   width: 100%;
   display: flex;
   align-items: center;
@@ -87,38 +80,6 @@
 }
 .delete:hover {
   background-color: rgb(186, 45, 59);
-}
-
-@media screen and (max-width: 780px) {
-  .tr1 {
-    height: 100px;
-    p:nth-child(1) {
-      width: auto;
-    }
-    p:last-child {
-      display: grid;
-      align-items: center;
-      width: 10%;
-    }
-    .delete {
-      margin: 0;
-      margin-top: 10px;
-      height: 35px;
-      width: 40px;
-      svg {
-        width: 12px;
-        height: 12px;
-      }
-    }
-    .edit {
-      height: 35px;
-      width: 40px;
-      svg {
-        width: 12px;
-        height: 12px;
-      }
-    }
-  }
 }
 
 

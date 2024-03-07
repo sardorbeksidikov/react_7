@@ -130,32 +130,32 @@ function Tabel() {
         </div>
         <div className="container">
           <div className="tabel">
-            <div className="tr">
-              <p>#</p>
-              <p>First</p>
-              <p>Last</p>
-              <p>Gender</p>
-              <p>Phone</p>
-              <p>Favorite</p>
-              <p>Action</p>
+            <div className="map">
+              <h4>#</h4>
+              <h4>FirstName</h4>
+              <h4>LastName</h4>
+              <h4>Gender</h4>
+              <h4>Phone</h4>
+              <h4>Favorite</h4>
+              <h4>Action</h4>
             </div>
-            {data?.map((el, i) => (
-              <div className="tr1" key={i}>
+            {data?.map((element, i) => (
+              <div className="map-one" key={i}>
                 <p>{i + 1}</p>
-                <p>{el?.name}</p>
-                <p>{el?.last}</p>
-                <p> {el?.gender}</p>
-                <p>{el?.phone} </p>
+                <p>{element?.name}</p>
+                <p>{element?.last}</p>
+                <p> {element?.gender}</p>
+                <p>{element?.phone} </p>
                 <p
                   className="like"
-                  onClick={() => (el?.liked ? unlike(el?.id) : like(el?.id))}>
-                  {el?.liked ? "❤️" : "🖤"}
+                  onClick={() => (element?.liked ? unlike(element?.id) : like(element?.id))}>
+                  {element?.liked ? "❤️" : "🖤"}
                 </p>
                 <p>
-                  <button className="edit" onClick={() => editBtn(el?.id)}>
+                  <button className="edit" onClick={() => editBtn(element?.id)}>
                     <Edit />
                   </button>
-                  <button className="delete" onClick={() => deleteAdd(el?.id)}>
+                  <button className="delete" onClick={() => deleteAdd(element?.id)}>
                     <Delete />
                   </button>
                 </p>
