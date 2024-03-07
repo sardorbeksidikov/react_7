@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Edit, { Delete } from "../../editanddelete";
 import Add from "../add";
-import Header from "../header";
 import "./Tabel.scss";
 import EditCom from "../edit";
+import Header  from "../header";
 
 function Tabel() {
   const [isAddActive, setIsAddActive] = useState(false);
@@ -71,7 +71,6 @@ function Tabel() {
     setData(user);
   };
 
-
   // Like function///////////////////
   const like = (id) => {
     let person = JSON.parse(localStorage.getItem("user")) || [];
@@ -118,7 +117,10 @@ function Tabel() {
               />
             </div>
             <div className="filter-item">
-              <select className="filter-item__select" value={filter} onChange={filterChange}>
+              <select
+                className="filter-item__select"
+                value={filter}
+                onChange={filterChange}>
                 <option value="all">Select Gender</option>
                 <option value="male">🧔🏻</option>
                 <option value="female">👩🏻‍🦱</option>
@@ -147,7 +149,7 @@ function Tabel() {
                 <p
                   className="like"
                   onClick={() => (el?.liked ? unlike(el?.id) : like(el?.id))}>
-                  {el?.liked ? "❤️" : "🖤" }
+                  {el?.liked ? "❤️" : "🖤"}
                 </p>
                 <p>
                   <button className="edit" onClick={() => editBtn(el?.id)}>

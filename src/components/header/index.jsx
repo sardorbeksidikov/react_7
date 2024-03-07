@@ -1,5 +1,4 @@
 import "./Header.scss";
-import "react-toastify/dist/ReactToastify.css";
 function Header(props) {
   const add = () => {
     props.AddContact("active");
@@ -7,12 +6,10 @@ function Header(props) {
 
   return (
     <>
-      
       <header>
         <div className="container">
           <div className="header">
-           
-            <button onClick={add}>Add</button>
+            <button className="header-btn" onClick={add}>Add</button>
           </div>
         </div>
       </header>
